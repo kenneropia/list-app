@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>List App</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/media.css" /> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/scrollbar.css" /> -->
+	</head>
+	<body>
+		<nav id="navBar">
+      <span class="navbar-icon"
+      ><svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="23"
+					height="48"
+					focusable="false"
+					viewBox="0 0 20 15"
+				>
+					<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg
+			></span>
+			<span class="navbar-title icon">
+				List
+			</span>
+			<span class="search-container">
+				<form>
+					<label>
+						<button role="button">
+							<svg class="svg-hover" 
+								focusable="false"
+								height="24px"
+								viewBox="0 0 24 24"
+								width="24px"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z"
+								></path>
+							
+							</svg>
+						</button>
+					</label>
+					<input type="text" placeholder="Search" name="search" />
+				</form>
+      </span>
+      <span class="navbar-action">
+       <span class="reload hover">
+       </span>
+      <span class="profile-pic">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4QAqRXhpZgAASUkqAAgAAAABADEBAgAHAAAAGgAAAAAAAABHb29nbGUAAP/bAIQAAwICAwICAwMDAwQDAwQFCAUFBAQFCgcHBggMCgwMCwoLCw0OEhANDhEOCwsQFhARExQVFRUMDxcYFhQYEhQVFAEDBAQCAgIJAgIJCAICAggICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgI/8AAEQgAIAAgAwERAAIRAQMRAf/EABgAAQEBAQEAAAAAAAAAAAAAAAgJBQYC/8QAMRAAAQMCAwYEBAcAAAAAAAAAAQIDBBEhAAUSBgcIIjFBExRRYUJxgfEJFiMkQ1Lw/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKYbfbTflbZuTKbI82seFHBFecjqR6AVP0p3wAa34CblW7DONoHXHWI6l+UjLKiHHnVV1KB7/ESr1Nr1oE9po1zHFiM2u9TqvX64Dn84jqhTUymqMOIWFpLfRJFxTAXk25y5e1+ceCsqRl0VOkm41k0NEn3tf0AwBK/EqROh7q9lI+VTfKeDMWVQ208roDYCaDSTy1NLgcxrgJrZkM7Z0yEu8miqv079O4oe4+3YPMea/wCfgSM5iKlw0uNqWwVhBfbCgVJqBVOoAitDStaHAVsHHbu6DqBJM5vUrq2hK6E1ubit7UFSSbYAlcVvE7lm+KBAfyZ5MJuG8XBHnIKi+lRKW9GioNKalalJ62BHUCRPz6VN8N52TEbcZroDR51C/KQCR3+eAQvAtuMVvz3rHPM+iLkbK7OhMqTUlKJEn+BivcVBWoDsgA2XcDi5mj7jfM6qtr/17W9/T54DKfccWhayT6JFeg6W/wB6YDOWqS8E61Lcta9aYBH8IfE3mXDnm+ZNyGVzNmc1R+6iaqKbeSCG3269xWih8SfdKaB//9k="  alt="" aria-hidden="true">
+      </span>
+    </span>
+		</nav>
+		<div id="whole">
+			<aside id="sideBar">
+				<ul>
+					<li id="current-tab">
+						<span>
+						<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"></path></svg>
+						</span>
+
+						<span class="word">Notes</span>
+					</li>
+
+					<li>
+						<span
+							><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M20.41 4.94l-1.35-1.35c-.78-.78-2.05-.78-2.83 0L13.4 6.41 3 16.82V21h4.18l10.46-10.46 2.77-2.77c.79-.78.79-2.05 0-2.83zm-14 14.12L5 19v-1.36l9.82-9.82 1.41 1.41-9.82 9.83z"
+								></path></svg
+						></span>
+						<span class="word">Edit Labels</span>
+					</li>
+					<li>
+						<span
+							><svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="74"
+								height="24"
+								viewBox="0 0 24 24"
+							>
+								<path
+									d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM6.24 5h11.52l.83 1H5.42l.82-1zM5 19V8h14v11H5zm11-5.5l-4 4-4-4 1.41-1.41L11 13.67V10h2v3.67l1.59-1.59L16 13.5z"
+								></path></svg
+						></span>
+						<span class="word">Archive</span>
+					</li>
+					<li>
+						<span
+							><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path
+									d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13z"
+								></path>
+								<path d="M9 8h2v9H9zm4 0h2v9h-2z"></path></svg
+						></span>
+						<span class="word">Trash</span>
+					</li>
+				</ul>
+			</aside>
+			<section id="sideBody">
+				<div class="createNote">
+					<div contenteditable="true" class="Note-child not-focus">
+            Take a note...
+          </div>
+				</div>
+
+				<div id="listSection">
+					<article>
+						<div class="preview-list-item">
+							<div class="preview-list-body">
+								Lorem okkkkk ipsum dolor sit amet consectetur adipisicing elit.
+								Magnam eius, sunt illum perspiciatis aperiam nostrum facere
+								ullam omnis, quod repellendus hic possimus quaerat aspernatur
+								nulla vero fugit aliquid? Facilis, dolorum! Lorem ipsum dolor
+								sit amet consectetur adipisicing elit. Magnam eius, sunt illum
+								perspiciatis aperiam nostrum facere ullam omnis, quod
+								repellendus hic possimus quaerat aspernatur nulla vero fugit
+								aliquid? Facilis, dolorum! Lorem ipsum dolor sit amet
+								consectetur adipisicing elit. Magnam eius, suntk
+							</div>
+						</div>
+					</article>	<article>
+						<div class="preview-list-item">
+							<div class="preview-list-body">
+								Lorem okkkkk ipsum dolor sit amet consectetur adipisicing elit.
+								Magnam eius, sunt illum perspiciatis aperiam nostrum facere
+								ullam omnis, quod repellendus hic possimus quaerat aspernatur
+								nulla vero fugit aliquid? Facilis, dolorum! Lorem ipsum dolor
+								sit amet consectetur adipisicing elit. Magnam eius, sunt illum
+								perspiciatis aperiam nostrum facere ullam omnis, quod
+								repellendus hic possimus quaerat aspernatur nulla vero fugit
+								aliquid? Facilis, dolorum! Lorem ipsum dolor sit amet
+								consectetur adipisicing elit. Magnam eius, suntk
+							</div>
+						</div>
+					</article>
+					<article>
+						<div class="preview-list-item">
+							<div class="preview-list-body">
+								Lorem <b>okkkkk</b> ipsum dolor sit amet consectetur adipisicing
+								elit. Magnam eius, sunt illum perspiciatis aperiam nostrum
+								facere ullam omnis, quod repellendus hic possimus quaerat
+								aspernatur nulla vero fugit aliquid? Facilis, dolorum! Lorem
+								ipsum dolor sit amet consectetur adipisicing elit. Magnam eius,
+								sunt illum perspiciatis aperiam nostrum facere ullam omnis, quod
+								repellendus hic possimus quaerat aspernatur nulla vero fugit
+								aliquid? Facilis, dolorum! Lorem ipsum dolor sit amet
+								consectetur adipisicing elit. Magnam eius, sunt
+							</div>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

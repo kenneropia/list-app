@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Page Title</title>
+  <style>
+    .search-cat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .search-cat .search-cat-item {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(253, 254, 255);
+      top: 0;
+      width: 70%;
+      margin: 5px;
+      padding: 0px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .search-cat-item>header {
+      padding: 0px 5px;
+    }
+
+    .search-cat-item .search-cat-content ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .search-cat-content ul>li {
+      display: flex;
+      margin-right: 3px;
+      padding: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-cat-content ul.types>li {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(47, 118, 209);
+    }
+
+    .search-cat-content ul.labels>li {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(243, 243, 243);
+    }
+
+  .search-cat-content ul.labels>*::after{
+    content: "okkkk";
+  }
+
+    .search-cat-content ul.colors>li {
+      margin: 10px;
+      padding: 20px;
+      border-radius: 25px;
+      border: 1px solid grey;
+      background-color: rgb(243, 243, 243);
+    }
+
+    .search-cat-content ul.types li span {
+      color: #e0e0e0;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGRkZGRiI+CiAgPHBhdGggZD0iTTE4IDE3di02YzAtMy4wNy0xLjYzLTUuNjQtNC41LTYuMzJWNGMwLS44My0uNjctMS41LTEuNS0xLjVzLTEuNS42Ny0xLjUgMS41di42OEM3LjY0IDUuMzYgNiA3LjkyIDYgMTF2Nkg0djJoMTZ2LTJoLTJ6bS0yIDBIOHYtNmMwLTIuNDggMS41MS00LjUgNC00LjVzNCAyLjAyIDQgNC41djZ6bS00IDVjMS4xIDAgMi0uOSAyLTJoLTRjMCAxLjEuOSAyIDIgMnoiIC8+Cjwvc3ZnPgo=");
+      background-size: 2em;
+      display: inline-block;
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      padding: 0px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="search-cat">
+    <div class="search-cat-item">
+      <header class="search-cat-header">
+        <h1>
+          Types
+        </h1>
+      </header>
+      <div class="search-cat-content">
+        <ul class="types">
+          <li>
+            <span>
+
+            </span>
+          </li>
+          <li>
+            <span>
+
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="search-cat-item">
+      <header class="search-cat-header">
+        <h1>
+          Labels
+        </h1>
+      </header>
+      <div class="search-cat-content">
+        <ul class="labels">
+          <li>
+            <span>
+
+            </span>
+          </li>
+          <li>
+            <span>
+
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="search-cat-item">
+      <header class="search-cat-header">
+        <h1>
+          Colors
+        </h1>
+      </header>
+      <div class="search-cat-content">
+        <ul class="colors">
+          <li>
+            <span>
+
+            </span>
+          </li>
+          <li>
+            <span>
+
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
